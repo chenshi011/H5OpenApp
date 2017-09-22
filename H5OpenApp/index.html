@@ -3,6 +3,10 @@
 <head>
     <title>H5Pay</title>
     <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file:; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
     <script type="text/javascript" src="jquery-3.2.0.min.js"></script>
     <script type="text/javascript" src="openapp.js"></script>
     <style type="text/css">
@@ -23,7 +27,7 @@
         <input class="localUrl" type="text" name="localUrl"/>
     </div>
 
-    <a onclick="openApp()" href="chinaums://" class="app_open"><button>点击打开微信</button></a>
+    <div class="app_open"><button>点击打开微信</button></div>
 
     <div class="mask" style="display: none;"></div>
 
