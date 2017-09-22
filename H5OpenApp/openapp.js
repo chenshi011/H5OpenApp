@@ -11,7 +11,7 @@ var  createIframe=(function(){
             return iframe;
         }
     }
-})()；
+})();
 
 
 
