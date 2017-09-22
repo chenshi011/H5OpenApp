@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>H5Pay</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src * gap://ready file:; style-src 'self' 'unsafe-inline'; img-src 'self' data:; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script type="text/javascript" src="jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="openapp.js"></script>
+    <style type="text/css">
+    .mask{
+        height:100%;
+        width:100%;
+        position:fixed;
+        _position:absolute;
+        top:0;
+        z-index:99999;
+        opacity:0.8; filter: alpha(opacity=80);
+        background-color:#000;
+    }
+</style>
+</head>
+<body>
+    <div class="localUrlInput">
+        <input class="localUrl" type="text" name="localUrl"/>
+    </div>
+
+    <a onclick="openApp()" href="chinaums://" class="app_open"><button>点击打开微信</button></a>
+
+    <div class="mask"></div>
+
+</body>
+</html>
